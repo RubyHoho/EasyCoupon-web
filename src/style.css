@@ -1,0 +1,36 @@
+.titleName {
+    font-weight: bold;
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    margin: 8px;
+}
+
+.flex {
+    display: flex;
+}
+
+.border {
+    border-radius: 8px;
+    margin: 8px;
+    box-shadow: 0 0 15px -3px rgba(0, 0, 0, 0.1), 0 3px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.imgBorder {
+    border-radius: 8px;
+    box-shadow: 0 0 15px -3px rgba(0, 0, 0, 0.1), 0 3px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.margin {
+    margin: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .titleName {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+    }
+}
